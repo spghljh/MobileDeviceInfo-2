@@ -1,0 +1,97 @@
+<?php include $_SERVER['DOCUMENT_ROOT'].'/mdi_con.php';?>
+
+<?php
+
+          $sql1 = "select * from mdl where name_device='$name_device' ";		// 일련번호 내림차순 전체 레코드 검색
+          $result1 = mysqli_query($con, $sql1);			// SQL 명령 실행
+          $total_record1 = mysqli_num_rows($result1); // 전체 글 수
+          for ($i=0; $i<$total_record1; $i++) {
+          mysqli_data_seek($result1, $i); 		// 가져올 레코드로 위치(포인터) 이동      	
+          $row = mysqli_fetch_assoc($result1); // 하나의 레코드 가져오기
+
+          $cpu         = $row["cpu_device"];	
+          ?>
+
+          <?php
+          }
+?>
+
+
+
+<div class="line_spec">   
+      <div class="chart_div">
+
+      <div class="chart_div_image1" >
+      <div class="Module_Layout_1_1_1_1_0" style="margin-left:20px;">
+                    <a style="font-size:14px; color:white; width: 40px;">CPU</a>                                   
+                </div>
+              </div>
+
+              <div class="chart_div_image2">
+                  <div>
+                  <a>프로세서</a>
+                  </div>
+
+              </div>
+
+
+
+
+
+
+
+
+<?php
+
+
+$sql = "select * from mcl where name_cpu='$cpu_device' ";	// 레코드 검색
+$result = mysqli_query($con, $sql);			// SQL 명령 실행
+
+$row = mysqli_fetch_assoc($result);			// 레코드 가져오기
+$id_cpu= $row["id_cpu"];		
+$manf_cpu= $row["manf_cpu"];	
+?>	
+
+
+
+
+
+
+
+
+
+
+              <div class="chart_div_image4" style="width:45px;">
+                 
+                <div class="chart_div_image4_brand_cpu">
+                    <a href="../page1/page1_SearchModule_ResultPage.php?catgo=manf_cpu&search=<?=$manf_cpu?>"><?php require $_SERVER['DOCUMENT_ROOT'].'/page1/perDeviceCpuBrand.php'; ?></a>
+                </div>
+              </div>
+
+              <div class="chart_div_image3" style="width:180px; justify-content:left;">
+                  <div>
+
+
+
+                  <a class="chart_div_image3_parameter" href="../page1/page1view_id.php?id_cpu=<?=$id_cpu?>"><?=$cpu_device?></a>
+                  </div>
+              </div>
+
+         
+              <div class="chart_div_graph_device_nochart" style="width:280px;">
+             <div class="chart_div_graph_device_nochart_button" >
+                  <a>
+                  <a style=
+                    "
+                    color:#e0c2fe !important;
+                    text-shadow:0 0 2px black !important;
+                    font-weight:700 !important;
+                    margin-right:-5px !important;
+                    margin-left:-8px !important;
+                    " href="../page2/page2_SearchModule_ResultPage.php?catgo=cpu_device&search=<?=$cpu_device?>"><?=$cpu_device?></a>
+                    <a href="../page2/page2_SearchModule_ResultPage.php?catgo=cpu_device&search=<?=$cpu_device?>">를 탑재한 다른 제품</a>
+                  </div>
+              </div>
+
+      </div>   
+</div>
