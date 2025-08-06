@@ -8,29 +8,34 @@
     <link rel="stylesheet" href="/default_css/default_module_design.css">  -->
     <link rel="stylesheet" href="/default_css/default_main_inhanced.css"> 
     <link rel="stylesheet" href="/default_css/cpu_tool.css"> 
+
+    <link rel="stylesheet" href="/default_css/default_module_list_cpu.css">
+    <link rel="stylesheet" href="/default_css/default_module_list_device.css">
     </head>
 <body>
     <header>
     </header>
-    <main>
     <div class="modules_container">
-
-        <div class="module_area"><!--default_module_title.css-->
+        <!--default_module_title.css-->
+        
+        <!-- <div class="module_area">
             <?php include $_SERVER['DOCUMENT_ROOT'].'/resources/views/modules/content/text/label_index_cpu.php';?>
-        </div><!--module_component-->
+        </div> -->
 
-        <div class="module_area"><!--default_module_design.css-->
+        <!--default_module_design.css-->
+        <div class="module_area" style="margin-top: 80px;">
             <?php include $_SERVER['DOCUMENT_ROOT'].'/resources/views/modules/box/index/module_box-index-to-cpu.php';?>
-        </div><!--module_component-->
+        </div>
 
-        <div class="module_area"><!--default_module_title.css-->
+        <!--default_module_title.css-->
+        <!-- <div class="module_area">
             <?php include $_SERVER['DOCUMENT_ROOT'].'/resources/views/modules/content/text/label_index_device.php';?>
-        </div><!--module_component-->
+        </div> -->
 
-        <div class="module_area"><!--default_module_design.css-->
+        <!--default_module_design.css-->
+        <div class="module_area" style="margin-bottom: 200px;">
             <?php include $_SERVER['DOCUMENT_ROOT'].'/resources/views/modules/box/index/module_box-index-to-device.php';?>
-        </div><!--module_component-->
-
+        </div>
 
 
     </main>

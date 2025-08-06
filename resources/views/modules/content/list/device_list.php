@@ -25,9 +25,11 @@ for ($i = 0; $i < $total_record; $i++) {
 
         <div class="target_item_row_top hide_rate_4">
             <div class="device_item ">디바이스</div>
-            >
+            <div  class="arrow">></div>
             <div class="device_type "><?= $type_device ?></div>
-            <div class="device_release "><?= $release_device ?></div>
+            <div  class="arrow">></div>
+            <div class="device_release2 "><?= $release_device ?></div>
+            <div class="device_release "></div>
         </div>
 
         <div class="target_item_row_bottom">
@@ -71,9 +73,4 @@ for ($i = 0; $i < $total_record; $i++) {
 }
 mysqli_close($con);
 ?>
-</div>
-
-<!-- 고정 콘텐츠 영역 -->
-<div class="fixed_content_area">
-<div><span style="color:black;"><?=$total_record ?></span> 건의 디바이스가 조회되었습니다.</div>
 </div>

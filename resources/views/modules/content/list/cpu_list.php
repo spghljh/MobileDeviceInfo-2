@@ -26,10 +26,12 @@ for ($i = 0; $i < $total_record; $i++) {
     <div class="target_item_row">
 
         <div class="target_item_row_top hide_rate_4">
-            <div class="cpu_item ">프로세서</div>
-            >
-            <div class="cpu_type "><?= $type_cpu ?></div>
-            <div class="cpu_release "><?= $release_cpu ?></div>
+                <div class="cpu_item ">프로세서</div>
+                <div  class="arrow">></div>
+                <div class="cpu_type "><?= $type_cpu ?></div>
+                <div  class="arrow">></div>
+                <div class="cpu_release2 "><?= $release_cpu ?></div>
+                <div class="cpu_release "></div>
         </div>
         <div class="target_item_row_bottom">
             <div class="cpu_manf">
@@ -51,8 +53,10 @@ for ($i = 0; $i < $total_record; $i++) {
             <div class="cpu_core_text hide_rate_3">
                 코어
             </div>
-
-            <div class="cpu_core hide_rate_2">
+            <div class="slash hide_rate_2">
+            /
+            </div>
+            <div class="cpu_thread hide_rate_2">
                 <a class="highlight"><?= $thread_cpu ?></a>
             </div>
             <div class="cpu_thread_text hide_rate_2">
@@ -61,27 +65,16 @@ for ($i = 0; $i < $total_record; $i++) {
 
             <div class="cpu_speed_div hide_rate_1">
 
-                <div class="cpu_base_speed_div">
-                    <div class="cpu_max_text ">
-                        기본
-                    </div>
-                    <div class="cpu_maxspeed ">
+                <div class="cpu_speed_div_top">
+           
+                    <div class="cpu_speed_div_top_center ">
                         <a class="highlight2" ><?= $minghz_cpu ?></a>
                     </div>
-                    <div class="cpu_ghz_text ">GHz</div>
+                    <div class="cpu_speed_div_top_right">GHz</div>
+                    
                 </div>
 
-                <div class="cpu_max_speed_div">
-                    <div class="cpu_max_text ">
-                        최대
-                    </div>
-                    <div class="cpu_maxspeed ">
-                        <a class="highlight2" ><?= $maxghz_cpu ?></a>
-                    </div>
-                    <div class="cpu_ghz_text ">GHz</div>
-                </div>
-
-            </div>
+            </div><!--cpu_speed_div-->
 
 
         </div>
@@ -92,7 +85,3 @@ mysqli_close($con);
 ?>
 </div>
 
-<!-- 고정 콘텐츠 영역 -->
-<div class="fixed_content_area">
-<div><span style="color:black;"><?=$total_record ?></span> 건의 프로세서가 조회되었습니다.</div>
-</div>

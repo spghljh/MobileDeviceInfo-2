@@ -20,6 +20,7 @@ html, body {
     display: flex;
     flex-direction: column;
     gap: 2rem;
+    
   }
   
   /* 개별 영역 */
@@ -27,7 +28,6 @@ html, body {
     width: 100%;
     border: 1px solid blue;
     padding: 1rem;
-    
   }
   
   /* 모듈 컴포넌트 */
@@ -122,8 +122,10 @@ html, body {
   }
   
   .module_tool-href:hover {
-    color: rgb(255, 0, 157);
-    text-shadow: 0 0 3px white;
+    a{
+      color: rgb(255, 0, 157) !important;
+      transition: color 0.4s ease;
+    }
   }
   
   /* 모듈 하단 내용 */
@@ -177,4 +179,16 @@ html, body {
     flex-direction: column;
     align-items: flex-start;
   }
+  
+  @media screen and (max-width: 1050px) {
+    .module_component {
+      min-width: 940px;
+    }
+
+    .hide_rate_1_index{
+      display: none !important;
+    }
+  }
+
+  
   

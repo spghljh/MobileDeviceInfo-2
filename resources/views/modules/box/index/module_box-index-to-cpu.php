@@ -13,14 +13,15 @@
         <div class="module_content_start">
         
         <div class="module_content_start-cpu">
-            <div class="total_cpu_count">
+            <div class="total_cpu_count hide_rate_1_index">
                 <div class="total_cpu_count_num">
-                    <a href="/resources/views/cpu_list.php"><?php include $_SERVER['DOCUMENT_ROOT'].'resources/views/modules/content/text/count_total_cpu.php';?></a>
+                    <a href="/resources/views/cpu_list.php"><?php include $_SERVER['DOCUMENT_ROOT'].'/resources/views/modules/content/text/count_total_cpu.php';?></a>
                 </div>
                 <div class="total_cpu_count_processor">
                     프로세서
                 </div>
             </div>
+
             <div class="total_cpu_by_manf">
 
             </div>

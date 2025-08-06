@@ -17,9 +17,9 @@
     justify-content: space-between; /* 요소 간 균등 배치 */
     align-items: center;
     gap: 1rem;
-    padding: 1rem;
-    background-color: white;
-    border: 2px solid rgba(0,0,0,0.6);
+    padding: 0rem;
+    background: linear-gradient(to top, rgba(86, 0, 66, 0.1), transparent);
+    border: 1px solid rgba(0,0,0,0.7);
     box-shadow: 0 0 12px rgba(0, 0, 0, 0.1);
     border-radius: 8px;
     box-sizing: border-box;
@@ -31,16 +31,21 @@
   }
 
   .target_item_row_top{
-     width: 100%;
-    justify-content: space-between; /* 요소 간 균등 배치 */
-    display: flex;
-    flex-direction: row;
-    align-items: center;
+    width: 100%;
+   justify-content: space-between; /* 요소 간 균등 배치 */
+   display: flex;
+   flex-direction: row;
+   align-items: center;
 
-    gap: 1rem;
-    padding: 1rem;
-    margin-bottom: -30px;
-  }
+   gap: 1rem;
+   padding: 1rem;
+   margin-bottom: -20px;
+
+   border-bottom: 1px solid #dddddd;
+   height: 48px;
+   
+ }
+ 
   .target_item_row_bottom{
      width: 100%;
     justify-content: space-between; /* 요소 간 균등 배치 */
@@ -50,6 +55,7 @@
 
     gap: 1rem;
     padding: 1rem;
+    height: 80px;
   }
 
   .target_item_row:hover {
@@ -70,27 +76,13 @@
     }
 
   }
-  
 
-  
-  /* 정렬 클래스 
-  .right_align {
-    display: flex;
-    justify-content: flex-end;
-  }
-  */
-
-  /* 🔸 항목 스타일 */
-  .item_symbol a.symbol_text {
-    color: #bbbbbb;
-  }
-  
   .brand_symbol {
     display: flex;
     justify-content: center;
     align-items: center;
-    width: 80px;
-    height: 80px;
+    width: 60px;
+    height: 60px;
   }
   .cpu_brand_for_device {
   display: flex;
@@ -104,38 +96,6 @@
     width: 100%;
     height: 100%;
   }
-
-  
-  .item_name a {
-    font-size: 32px;
-    font-weight: bold;
-    text-decoration: none;
-    color: black;
-  }
-  
-  .item_type a {
-    font-size: 18px;
-  }
-  
-  .item_spec_1, .item_spec_2 {
-    font-size: 24px;
-  }
-  
-  .item_spec_1_title, .item_spec_2_title {
-    font-size: 16px;
-    margin-right: -5px;
-  }
-  
-  
-  /* 🔻 고정 영역 */
-  .fixed_content_area {
-    margin-top: 2rem;
-    padding: 1.5rem;
-    background-color: transparent;
-    font-size: 30px;
-  }
-
-
 
   @media screen and (max-width: 650px) {
 
@@ -157,7 +117,7 @@
     }
 
     .device_name{
-      font-size: 24px !important; min-width: 180px !important; text-align: center;
+      font-size: 22px !important; min-width: 180px !important; text-align: center;
     }
     .device_manf   {  min-width: 60px !important;
   }
@@ -169,9 +129,7 @@
   .module_tool{
     display: none !important;
   }
-  .fixed_content_area{
-    font-size: 20px !important;
-  }
+
 
   }
 
@@ -184,21 +142,21 @@
 
     .target_item_row{
       min-width: 640px;
-      padding: 5px;
   }
 
   .module_component{
     min-width: 720px;
   }
 
-  .fixed_content_area{
-    font-size: 24px;
-  }
+
 }
 
 @media screen and (max-width: 1180px) {
     .hide_rate_1 {
       display: none !important;
+    }
+    .cpu_info_section{
+      margin-right: 20px !important;
     }
 }
 
@@ -208,20 +166,49 @@
 }
 
 /* 🔹 Flex 크기별 클래스 */
-  .device_item  { font-size: 24px; max-width: 90px;}
-  .device_type  { font-size: 24px; max-width: auto; min-width: auto; text-align: center; color: rgb(255, 0, 157);}
+  .device_item  { font-size: 18px; max-width: 90px; margin-bottom: 4px;}
+  .device_type  { font-size: 18px; max-width: auto; min-width: auto; text-align: center; color: rgb(255, 0, 157);}
+  .device_release2  { font-size: 18px; max-width: auto; min-width: auto; text-align: center; color: rgb(255, 0, 157);}
   .device_release  { flex: 1; font-size: 32px; text-align: right; color: rgb(255, 0, 157);}
-
-  .device_manf   { flex: 1;  min-width: 100px; max-width: 100px;
-      display: flex;
+  .device_manf   { flex: 1;  min-width: 100px; max-width: 100px; margin-right: -20px;
+      display: flex;  
     justify-content: left;
     align-items: center;
   }
   .device_name   { flex: 5; font-size: 38px; min-width: 480px;}
   .cpu_device_manf  { flex: 1; font-size: 32px; min-width: 70px; max-width: 70px; text-align: center;}
-  .cpu_device   { max-width: 340px;  text-align: center;}
+  .cpu_device   { max-width: 340px;  text-align: center; margin-right: 10px;}
 
     a.highlight {
     color: rgb(255, 0, 157);
     font-size: 28px;
+  }
+
+
+  .slash {
+    width: 5px;
+    font-size: 36px;
+    font-weight: normal;
+    color: rgba(0,0,0, 0.2);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-right: 10px;
+    margin-left: -5px;
+
+    
+
+  }
+  .arrow {
+    width: 10px;
+    font-size: 18px;
+    font-weight: normal;
+    color: rgba(0,0,0, 1);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+
+    
+
   }
