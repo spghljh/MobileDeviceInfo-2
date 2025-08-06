@@ -1,0 +1,48 @@
+         /* 안내문 */
+                .module_title{
+                        outline-width: 1px;
+                        color: hsl(0, 0%, 0%);
+                        width: 1300px;
+                        height: auto;
+                        align-items: left;
+                        justify-content: left;
+                        text-align: left;
+                     
+
+                }
+                .main_title{
+                        color: black;
+                        margin: 8px;
+                        width: auto;
+                        height: auto;
+                        display: flex;     
+                        justify-content: left;  
+                        align-items: left;
+                        text-align: left;
+                        flex-direction: column;
+                 
+                        
+                        font-weight: 700;
+                        font-size: 24px;
+                    
+                }
+                .sub_title{
+                        color: black;
+                        margin: 5px;
+                        width: auto;
+                        height: auto;
+                        display: flex;       
+                        justify-content: left;  
+                        align-items: left;
+                        text-align: left;
+                        flex-direction: column;
+                        margin-bottom: 15px;
+                  
+                        font-size: 20px;
+                        font-weight: 700;
+                        padding-left: 8px;
+                
+
+                } 
+                /* 안내문 */ 
+

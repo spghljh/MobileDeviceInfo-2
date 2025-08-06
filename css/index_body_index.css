@@ -22,7 +22,8 @@
                 
                 /* 공통 */
                 .ground{
-                        background: linear-gradient(white 5%, rgba(190, 107, 151, 0.548));
+                        /* background: linear-gradient(white 5%, rgba(190, 107, 151, 0.548)); */
+                        background: linear-gradient(white, rgb(248,246,247), rgb(241,217,231) );
                         background-attachment: fixed;
                         width: 100%;
                         height: inherit;
