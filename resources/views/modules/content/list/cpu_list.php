@@ -37,7 +37,11 @@ for ($i = 0; $i < $total_record; $i++) {
             <div class="cpu_manf">
                 <div class="brand_symbol">
                     <div class="brand_inner">
+<<<<<<< HEAD
                         <?php include $_SERVER['DOCUMENT_ROOT'].'/resources/views/modules/content/symbol/percpuBrand.php'; ?>
+=======
+                        <?php include $_SERVER['DOCUMENT_ROOT'].'/mdi2/resources/views/modules/content/symbol/percpuBrand.php'; ?>
+>>>>>>> 698cd26 (rebase작업을 위한 커밋)
                     </div>
                 </div>
             </div>
@@ -66,7 +70,11 @@ for ($i = 0; $i < $total_record; $i++) {
             <div class="cpu_speed_div hide_rate_1">
 
                 <div class="cpu_speed_div_top">
+<<<<<<< HEAD
            
+=======
+                    <div class="cpu_speed_div_top_left">기본</div>
+>>>>>>> 698cd26 (rebase작업을 위한 커밋)
                     <div class="cpu_speed_div_top_center ">
                         <a class="highlight2" ><?= $minghz_cpu ?></a>
                     </div>

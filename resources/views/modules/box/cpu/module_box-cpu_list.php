@@ -1,5 +1,9 @@
 
+<<<<<<< HEAD
 <?php include $_SERVER['DOCUMENT_ROOT'].'/mdi_con.php';?>
+=======
+<?php include $_SERVER['DOCUMENT_ROOT'].'/mdi2/mdi_con.php';?>
+>>>>>>> 698cd26 (rebase작업을 위한 커밋)
 
 <!--모듈-START-->
 <div class="module_component">
@@ -15,7 +19,11 @@
     <div class="module_content">
         <div class="module_content_start">
 
+<<<<<<< HEAD
         <?php include $_SERVER['DOCUMENT_ROOT'].'/resources/views/modules/content/list/cpu_list.php';?>
+=======
+        <?php include $_SERVER['DOCUMENT_ROOT'].'/mdi2/resources/views/modules/content/list/cpu_list.php';?>
+>>>>>>> 698cd26 (rebase작업을 위한 커밋)
 
         </div><!--module_content_start-->
     </div><!--module_content-->

@@ -36,7 +36,11 @@ for ($i = 0; $i < $total_record; $i++) {
             <div class="device_manf">
                 <div class="brand_symbol">
                     <div class="brand_inner">
+<<<<<<< HEAD
                         <?php include $_SERVER['DOCUMENT_ROOT'].'/resources/views/modules/content/symbol/perBrand.php'; ?>
+=======
+                        <?php include $_SERVER['DOCUMENT_ROOT'].'/mdi2/resources/views/modules/content/symbol/perBrand.php'; ?>
+>>>>>>> 698cd26 (rebase작업을 위한 커밋)
                     </div>
                 </div>
             </div>
@@ -57,7 +61,11 @@ for ($i = 0; $i < $total_record; $i++) {
             <div class="cpu_info_section hide_rate_2">
                 <div class="cpu_brand_for_device">
                     <div class="brand_inner">
+<<<<<<< HEAD
                         <?php include $_SERVER['DOCUMENT_ROOT'].'/resources/views/modules/content/symbol/percpuBrandForDevice.php'; ?>
+=======
+                        <?php include $_SERVER['DOCUMENT_ROOT'].'/mdi2/resources/views/modules/content/symbol/percpuBrandForDevice.php'; ?>
+>>>>>>> 698cd26 (rebase작업을 위한 커밋)
                     </div>
                 </div>
                
