@@ -68,10 +68,16 @@
     img {
       filter: invert(100%);
     }
-    .device_release{
+    .device_release2{
       color: white;
     }
     .device_type{
+      color: white;
+    }
+    .slash{
+      color: white;
+    }
+    .arrow{
       color: white;
     }
 

@@ -69,10 +69,16 @@
     img {
       filter: invert(100%);
     }
-    .cpu_release{
+    .cpu_release2{
       color: white;
     }
     .cpu_type{
+      color: white;
+    }
+    .slash{
+      color: white;
+    }
+    .arrow{
       color: white;
     }
   }
@@ -245,12 +251,10 @@
 
     
   }
-<<<<<<< HEAD
-=======
+
   .cpu_speed_div_top_left { min-width: 50px; max-width: 50px; justify-content: center; margin-bottom: 5px;
 
   }
->>>>>>> 698cd26 (rebase작업을 위한 커밋)
  
   .cpu_speed_div_top_center   { min-width: 50px; max-width: 50px; justify-content: right; margin-right: 10px;
 

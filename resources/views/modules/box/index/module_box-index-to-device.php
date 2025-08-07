@@ -15,11 +15,7 @@
         <div class="module_content_start-cpu">
             <div class="total_cpu_count hide_rate_1_index">
                 <div class="total_cpu_count_num">
-<<<<<<< HEAD
-                    <a href="/resources/views/device_list.php"><?php include $_SERVER['DOCUMENT_ROOT'].'/resources/views/modules/content/text/count_total_device.php';?></a>
-=======
                     <a href="/mdi2/resources/views/device_list.php"><?php include $_SERVER['DOCUMENT_ROOT'].'/mdi2/resources/views/modules/content/text/count_total_device.php';?></a>
->>>>>>> 698cd26 (rebase작업을 위한 커밋)
                 </div>
                 <div class="total_cpu_count_processor">
                     디바이스
