@@ -11,4 +11,5 @@
 ## 주요 기능
 
 ![CPU 목록 예시](./readme-img/mdi-laravel-readme-cover-1.png)
+
 ![DEVICE 목록 예시](./readme-img/mdi-laravel-readme-cover-2.png)
