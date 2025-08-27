@@ -7,7 +7,8 @@
             <div class="module_name"><a style="color: white; text-decoration: none">프로세서 탐색</a></div>
             <div class="module_tool">
                 <div class="module_tool-href">
-                    <a href="{{ url('/cpu_list') }}" style="color: white; text-decoration: none">자세히</a>
+                    <a href="{{ config('app.url') . '/cpu_list' }}" style="color: white; text-decoration: none">자세히</a>
+
                 </div>
             </div>
         </div>
@@ -18,7 +19,7 @@
             <div class="module_content_start-cpu">
                 <div class="total_cpu_count hide_rate_1_index">
                     <div class="total_cpu_count_num">
-                        <a href="{{ url('/mdi-laravel/cpu_list') }}">
+                        <a href="{{ config('app.url') . '/cpu_list' }}">
                             @include('modules.content.text.count_total_cpu')
                         </a>
                     </div>

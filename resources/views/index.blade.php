@@ -4,7 +4,6 @@
     <meta charset="UTF-8">
     <title>default</title>
 
-    <!-- CSS 경로는 public 디렉토리 기준 -->
     <link rel="stylesheet" href="{{ asset('cpu_tool.css') }}">
     <link rel="stylesheet" href="{{ asset('default_main_inhanced.css') }}">
     <link rel="stylesheet" href="{{ asset('default_module_list_cpu.css') }}">
@@ -22,7 +21,9 @@
         <div class="module_area" style="margin-bottom: 200px;">
             @include('modules.box.index.module_box-index-to-device')
         </div>
+
     </div>
+    {{ asset('cpu_tool.css') }}
 
     <footer></footer>
 </body>
